@@ -60,13 +60,13 @@ export default function RecentTransactions() {
         </div>
         <div className="flex items-center justify-between py-3">
           <div>
-            <h3 className="font-medium">ETH Deposit</h3>
-            <div className="text-sm opacity-75">March 19, 2025 • 9:30 AM</div>
+            <h3 className="font-medium">ETH Refunded</h3>
+            <div className="text-sm opacity-75">April 18, 2025 • 9:30 AM</div>
             <div className="text-xs text-green-500 mt-1">Completed</div>
           </div>
           <div className="text-right">
-            <div className="text-green-500">+19.55 ETH</div>
-            <div className="text-sm">$66,989.00</div>
+            <div className="text-green-500">+20.038 ETH</div>
+            <div className="text-sm">$72,656.00</div>
           </div>
         </div>
       </div>

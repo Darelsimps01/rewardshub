@@ -263,7 +263,7 @@ export default function DashboardScreen({
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-red-500">-20.038 ETH</div>
+                      <div className="text-red-500">20.038 ETH</div>
                       <div className="text-sm">$72,656.46</div>
                     </div>
                   </div>
