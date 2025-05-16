@@ -31,7 +31,7 @@ export default function WithdrawModal({ isOpen, onClose, onShowNotification }: W
   }
 
   const handleMaxAmount = () => {
-    setAmount("72656.46") // 72712.46 - 65 fee
+    setAmount("0.00") // Balance is now 0
   }
 
   if (!isOpen) return null
@@ -77,6 +77,8 @@ export default function WithdrawModal({ isOpen, onClose, onShowNotification }: W
               className="w-full p-2 border rounded text-base"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
+              disabled={true}
+              placeholder="0.00"
             />
             <div className="absolute inset-y-0 right-0 flex items-center">
               <span className="px-3 text-gray-500">USD</span>
@@ -84,9 +86,7 @@ export default function WithdrawModal({ isOpen, onClose, onShowNotification }: W
           </div>
           <div className="flex justify-between mt-1">
             <span className="text-sm text-gray-500">Fee: $65.00</span>
-            <button className="text-sm text-primary" onClick={handleMaxAmount}>
-              Max
-            </button>
+            <span className="text-sm text-gray-500">Available: 0.00 ETH ($0.00)</span>
           </div>
         </div>
 
@@ -94,13 +94,13 @@ export default function WithdrawModal({ isOpen, onClose, onShowNotification }: W
           <h3 className="font-bold mb-2">Important:</h3>
           <ul className="list-disc pl-5 space-y-1">
             <li>A withdrawal fee of $65.00 applies</li>
-            <li>Please ensure your withdrawal address is correct</li>
-            <li>Withdrawals are processed in a few minutes</li>
-            <li>Minimum withdrawal amount is $100.00</li>
+            <li>Your current balance is 0.00 ETH ($0.00)</li>
+            <li>Insufficient funds for withdrawal</li>
+            <li>Please deposit funds before attempting to withdraw</li>
           </ul>
         </div>
 
-        <button className="btn-primary text-white px-4 py-2 rounded w-full" onClick={handleSubmit}>
+        <button className="btn-primary text-white px-4 py-2 rounded w-full" onClick={handleSubmit} disabled={true}>
           Withdraw
         </button>
       </div>

@@ -206,10 +206,10 @@ export default function DashboardScreen({
                   <h2 className="text-lg font-medium mb-2">Total Balance</h2>
                   <div className="flex items-baseline">
                     <span className="text-4xl font-bold" id="totalBalanceAmount">
-                      $72,656
+                      $0
                     </span>
                   </div>
-                  <div className="text-red-500 mt-1">-100% today</div>
+                  <div className="text-red-500 mt-1">$0.00 today</div>
                   <button
                     className="mt-3 bg-gray-200 dark:bg-gray-700 text-sm px-3 py-1 rounded"
                     onClick={onOpenShareModal}
